@@ -100,4 +100,8 @@
   .text-container {
     text-align: justify;
   }
+
+  #about .section__pic-container{
+    display: none;
+  }
 }
