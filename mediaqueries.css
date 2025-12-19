@@ -65,6 +65,7 @@
 @media screen and (max-width: 600px) {
   #contact {
     height: 50vh;
+    margin: auto;
   }
   #profile {
     height: 83vh;
