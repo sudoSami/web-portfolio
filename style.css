@@ -300,8 +300,8 @@ section {
   padding-bottom: 7rem;
   display: flex;
   flex-direction: column;
-  gap: 0rem;
   align-items: center;
+  justify-content: center;
 }
 
 .about-containers {
