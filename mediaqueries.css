@@ -10,6 +10,11 @@
   #projects {
     height: fit-content;
   }
+
+  #about{
+    height: auto;
+    gap: 3rem;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -44,6 +49,11 @@
   }
   .about-containers {
     margin-top: 0;
+  }
+
+  #about{
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
 
@@ -103,5 +113,12 @@
 
   #about .section__pic-container{
     display: none;
+  }
+
+  #about{
+    flex-direction: column;
+    gap: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }

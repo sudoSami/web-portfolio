@@ -75,6 +75,7 @@ a:hover {
 .hamburger-menu {
   position: relative;
   display: inline-block;
+  
 }
 
 .hamburger-icon {
@@ -91,6 +92,7 @@ a:hover {
   height: 2px;
   background-color: black;
   transition: all 0.3 ease-in-out;
+  
 }
 
 .menu-links {
@@ -103,6 +105,7 @@ a:hover {
   overflow: hidden;
   transition: all 0.3 ease-in-out;
   margin-top: 1rem;
+  background-color: whitesmoke;
 }
 
 .menu-links a {
@@ -117,7 +120,7 @@ a:hover {
 
 .menu-links li {
   list-style: none;
-  border-bottom: 0.1rem solid grey;
+  border: 0.1rem solid grey;
 }
 
 .menu-links.open {
@@ -225,7 +228,7 @@ section {
 }
 
 .mail-icon{
-  height: 2.5rem;
+  height: 2.55rem;
 }
 
 /* BUTTONS */
@@ -276,11 +279,21 @@ section {
   gap: 1rem;
 }
 
+.live-btn{
+  background-color: #0284C7;
+  color: white !important;
+  border: none;
+}
+
 /* ABOUT SECTION */
 
 #about {
   position: relative;
-  padding-bottom: 5rem;
+  padding-bottom: 7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  align-items: center;
 }
 
 .about-containers {
@@ -292,11 +305,13 @@ section {
 .about-details-container {
   justify-content: center;
   flex-direction: column;
+  
 }
 
 .about-containers,
 .about-details-container {
   display: flex;
+  
 }
 
 .about-pic {
@@ -317,6 +332,7 @@ section {
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   text-align: center;
+  
 }
 
 .section-container {
