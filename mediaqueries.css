@@ -58,9 +58,8 @@
 }
 
 @media screen and (max-width: 600px) {
-  #contact,
-  footer {
-    height: 40vh;
+  #contact {
+    height: 50vh;
   }
   #profile {
     height: 83vh;
@@ -69,9 +68,12 @@
   article {
     font-size: 1rem;
   }
+
+  footer{
+    height: 10vh;
+  }
   footer nav {
-    height: fit-content;
-    margin-bottom: 2rem;
+    display: none;
   }
   .about-containers,
   .contact-info-upper-container,
