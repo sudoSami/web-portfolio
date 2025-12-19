@@ -105,7 +105,7 @@ a:hover {
   overflow: hidden;
   transition: all 0.3 ease-in-out;
   margin-top: 1rem;
-  background-color: whitesmoke;
+  background-color: rgb(250, 250, 250);
 }
 
 .menu-links a {
@@ -121,6 +121,10 @@ a:hover {
 .menu-links li {
   list-style: none;
   border: 0.1rem solid grey;
+}
+
+.menu-links li:not(:first-child) {
+  border-top: none;
 }
 
 .menu-links.open {
@@ -280,9 +284,13 @@ section {
 }
 
 .live-btn{
-  background-color: #0284C7;
+  background-color: #22C55E;
   color: white !important;
   border: none;
+
+  &:hover{
+    background-color: #24af57;
+  }
 }
 
 /* ABOUT SECTION */
