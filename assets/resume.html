@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sami Ul Haq — Resume</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #1a1a1a;
+            background: #f5f5f5;
+            line-height: 1.5;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .page {
+            max-width: 800px;
+            margin: 40px auto;
+            background: #fff;
+            padding: 48px 56px;
+            box-shadow: 0 2px 16px rgba(0, 0, 0, 0.07);
+            border-radius: 4px;
+        }
+
+        /* ---------- Header ---------- */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            border-bottom: 2px solid #111;
+            padding-bottom: 16px;
+            margin-bottom: 28px;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        .header .subtitle {
+            font-size: 15px;
+            font-weight: 500;
+            color: #555;
+            margin-top: 2px;
+        }
+
+        .header .contact {
+            text-align: right;
+            font-size: 13px;
+            color: #444;
+        }
+
+        .header .contact a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        .header .contact a:hover {
+            text-decoration: underline;
+        }
+
+        .header .contact p {
+            margin-top: 3px;
+        }
+
+        /* ---------- Sections ---------- */
+        .section {
+            margin-bottom: 24px;
+        }
+
+        .section-title {
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #111;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 12px;
+        }
+
+        /* ---------- Summary ---------- */
+        .summary p {
+            font-size: 14px;
+            color: #333;
+        }
+
+        /* ---------- Skills ---------- */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px 40px;
+        }
+
+        .skill-category h3 {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .skill-category p {
+            font-size: 13px;
+            color: #555;
+        }
+
+        /* ---------- Projects ---------- */
+        .project {
+            margin-bottom: 16px;
+        }
+
+        .project:last-child {
+            margin-bottom: 0;
+        }
+
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+
+        .project h3 {
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        .project .links {
+            font-size: 12px;
+        }
+
+        .project .links a {
+            color: #0066cc;
+            text-decoration: none;
+            margin-left: 10px;
+        }
+
+        .project .links a:hover {
+            text-decoration: underline;
+        }
+
+        .project p {
+            font-size: 13px;
+            color: #444;
+            margin-top: 3px;
+        }
+
+        .project .tech {
+            font-size: 12px;
+            color: #777;
+            margin-top: 3px;
+        }
+
+        /* ---------- Education ---------- */
+        .education-item h3 {
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .education-item p {
+            font-size: 13px;
+            color: #555;
+        }
+
+        /* ---------- Print ---------- */
+        @media print {
+            body {
+                background: #fff;
+            }
+
+            .page {
+                margin: 0;
+                padding: 36px 44px;
+                box-shadow: none;
+                border-radius: 0;
+            }
+
+            .no-print {
+                display: none !important;
+            }
+        }
+
+        /* ---------- Print / Save button ---------- */
+        .print-bar {
+            text-align: center;
+            margin: 20px auto 0;
+            max-width: 800px;
+        }
+
+        .print-bar button {
+            background: #111;
+            color: #fff;
+            border: none;
+            padding: 10px 28px;
+            font-size: 14px;
+            font-family: 'Inter', sans-serif;
+            font-weight: 500;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .print-bar button:hover {
+            background: #333;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="page">
+
+        <!-- Header -->
+        <div class="header">
+            <div>
+                <h1>Sami Ul Haq</h1>
+                <p class="subtitle">Web Developer</p>
+            </div>
+            <div class="contact">
+                <p><a href="mailto:samiulhaq744@gmail.com">samiulhaq744@gmail.com</a></p>
+                <p><a href="https://github.com/sudoSami" target="_blank">github.com/sudoSami</a></p>
+                <p><a href="https://sudosami.github.io/web-portfolio/"
+                        target="_blank">sudosami.github.io/web-portfolio</a></p>
+            </div>
+        </div>
+
+        <!-- Summary -->
+        <div class="section summary">
+            <h2 class="section-title">Summary</h2>
+            <p>
+                Self-taught web developer with experience building responsive, user-friendly web applications using
+                modern
+                technologies. Focused on writing clean, maintainable code and turning ideas into clear, usable digital
+                experiences. Comfortable working across the full stack with JavaScript, React, Node.js, and MongoDB.
+            </p>
+        </div>
+
+        <!-- Skills -->
+        <div class="section">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <p>HTML, CSS, JavaScript, React</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <p>Node.js, Express.js, MongoDB</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools & Platforms</h3>
+                    <p>Git, GitHub, VS Code, GitHub Pages</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Other</h3>
+                    <p>REST APIs, Responsive Design, Socket.io</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projects -->
+        <div class="section">
+            <h2 class="section-title">Projects</h2>
+
+            <div class="project">
+                <div class="project-header">
+                    <h3>CineMate — Movie Discovery App</h3>
+                    <div class="links">
+                        <a href="https://github.com/sudoSami/CineMate" target="_blank">GitHub</a>
+                        <a href="https://sudosami.github.io/CineMate/" target="_blank">Live Demo</a>
+                    </div>
+                </div>
+                <p>A movie discovery web application that lets users search, browse, and explore films with a clean,
+                    intuitive interface.</p>
+                <p class="tech">HTML · CSS · JavaScript · API Integration</p>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <h3>Tic Tac Toe</h3>
+                    <div class="links">
+                        <a href="https://github.com/sudoSami/tic-tac-toe-react" target="_blank">GitHub</a>
+                        <a href="https://sudosami.github.io/tic-tac-toe-react/" target="_blank">Live Demo</a>
+                    </div>
+                </div>
+                <p>A classic Tic Tac Toe game built with React, featuring game state management, win detection, and a
+                    responsive UI.</p>
+                <p class="tech">React · CSS · JavaScript</p>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <h3>Weather App</h3>
+                    <div class="links">
+                        <a href="https://github.com/sudoSami/weather-app" target="_blank">GitHub</a>
+                        <a href="https://sudosami.github.io/weather-app/" target="_blank">Live Demo</a>
+                    </div>
+                </div>
+                <p>A weather application that displays real-time weather data for any city, with a visually appealing
+                    and intuitive layout.</p>
+                <p class="tech">HTML · CSS · JavaScript · Weather API</p>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <h3>Real-Time Chat App</h3>
+                    <div class="links">
+                        <a href="https://github.com/sudoSami" target="_blank">GitHub</a>
+                    </div>
+                </div>
+                <p>A full-stack real-time chat application with live messaging, built with a Node.js/Express backend and
+                    React frontend.</p>
+                <p class="tech">React · Node.js · Express.js · Socket.io · MongoDB</p>
+            </div>
+
+        </div>
+
+        <!-- Education -->
+        <div class="section">
+            <h2 class="section-title">Education</h2>
+            <div class="education-item">
+                <h3>Self-Taught Web Developer</h3>
+                <p>Continuous learning through online resources, documentation, and hands-on project building.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Print / Save as PDF button (hidden when printing) -->
+    <div class="print-bar no-print">
+        <button onclick="window.print()">Save as PDF</button>
+    </div>
+
+</body>
+
+</html>
