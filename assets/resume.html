@@ -56,6 +56,12 @@
             margin-top: 2px;
         }
 
+        .header .location {
+            font-size: 13px;
+            color: #777;
+            margin-top: 2px;
+        }
+
         .header .contact {
             text-align: right;
             font-size: 13px;
@@ -101,13 +107,13 @@
         .skills-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 8px 40px;
+            gap: 10px 40px;
         }
 
         .skill-category h3 {
             font-size: 14px;
             font-weight: 600;
-            margin-bottom: 4px;
+            margin-bottom: 3px;
         }
 
         .skill-category p {
@@ -115,9 +121,52 @@
             color: #555;
         }
 
+        /* ---------- Experience ---------- */
+        .exp-item {
+            margin-bottom: 14px;
+        }
+
+        .exp-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .exp-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+
+        .exp-item h3 {
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        .exp-item .date {
+            font-size: 12px;
+            color: #888;
+            white-space: nowrap;
+        }
+
+        .exp-item p {
+            font-size: 13px;
+            color: #444;
+            margin-top: 3px;
+        }
+
+        .exp-item ul {
+            margin-top: 4px;
+            padding-left: 18px;
+        }
+
+        .exp-item ul li {
+            font-size: 13px;
+            color: #444;
+            margin-bottom: 2px;
+        }
+
         /* ---------- Projects ---------- */
         .project {
-            margin-bottom: 16px;
+            margin-bottom: 14px;
         }
 
         .project:last-child {
@@ -162,14 +211,34 @@
         }
 
         /* ---------- Education ---------- */
-        .education-item h3 {
+        .edu-item {
+            margin-bottom: 10px;
+        }
+
+        .edu-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .edu-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+
+        .edu-item h3 {
             font-size: 14px;
             font-weight: 600;
         }
 
-        .education-item p {
+        .edu-item .date {
+            font-size: 12px;
+            color: #888;
+        }
+
+        .edu-item p {
             font-size: 13px;
             color: #555;
+            margin-top: 2px;
         }
 
         /* ---------- Print ---------- */
@@ -225,12 +294,12 @@
             <div>
                 <h1>Sami Ul Haq</h1>
                 <p class="subtitle">Web Developer</p>
+                <p class="location">Chakwal, Pakistan · Open to Remote Work</p>
             </div>
             <div class="contact">
                 <p><a href="mailto:samiulhaq744@gmail.com">samiulhaq744@gmail.com</a></p>
                 <p><a href="https://github.com/sudoSami" target="_blank">github.com/sudoSami</a></p>
-                <p><a href="https://sudosami.github.io/web-portfolio/"
-                        target="_blank">sudosami.github.io/web-portfolio</a></p>
+                <p><a href="https://samiulhaq.online" target="_blank">samiulhaq.online</a></p>
             </div>
         </div>
 
@@ -238,10 +307,10 @@
         <div class="section summary">
             <h2 class="section-title">Summary</h2>
             <p>
-                Self-taught web developer with experience building responsive, user-friendly web applications using
-                modern
-                technologies. Focused on writing clean, maintainable code and turning ideas into clear, usable digital
-                experiences. Comfortable working across the full stack with JavaScript, React, Node.js, and MongoDB.
+                Self-taught web developer with a background in Computer Science and 18+ months of hands-on experience
+                building web applications. Comfortable working across the full stack with JavaScript, React, Node.js,
+                Express, and MongoDB. Built 25+ projects ranging from REST APIs and browser extensions
+                to full-stack apps with real-time features. Focused on writing clean, maintainable code.
             </p>
         </div>
 
@@ -255,15 +324,15 @@
                 </div>
                 <div class="skill-category">
                     <h3>Backend</h3>
-                    <p>Node.js, Express.js, MongoDB</p>
+                    <p>Node.js, Express.js, MongoDB, REST APIs</p>
                 </div>
                 <div class="skill-category">
                     <h3>Tools & Platforms</h3>
-                    <p>Git, GitHub, VS Code, GitHub Pages</p>
+                    <p>Git, GitHub, VS Code, Netlify, Vercel</p>
                 </div>
                 <div class="skill-category">
                     <h3>Other</h3>
-                    <p>REST APIs, Responsive Design, Socket.io</p>
+                    <p>Socket.io, Chrome Extensions, Responsive Design, JWT Auth</p>
                 </div>
             </div>
         </div>
@@ -274,28 +343,51 @@
 
             <div class="project">
                 <div class="project-header">
-                    <h3>CineMate — Movie Discovery App</h3>
+                    <h3>Zemply — Real-Time Chat App</h3>
                     <div class="links">
-                        <a href="https://github.com/sudoSami/CineMate" target="_blank">GitHub</a>
-                        <a href="https://sudosami.github.io/CineMate/" target="_blank">Live Demo</a>
+                        <a href="https://github.com/sudoSami/Zemply-Chat-App" target="_blank">GitHub</a>
                     </div>
                 </div>
-                <p>A movie discovery web application that lets users search, browse, and explore films with a clean,
-                    intuitive interface.</p>
-                <p class="tech">HTML · CSS · JavaScript · API Integration</p>
+                <p>Full-stack chat application with real-time messaging powered by Socket.io, featuring a
+                    Node.js/Express backend and a frontend client.</p>
+                <p class="tech">Node.js · Express.js · Socket.io · JavaScript</p>
             </div>
 
             <div class="project">
                 <div class="project-header">
-                    <h3>Tic Tac Toe</h3>
+                    <h3>Store API</h3>
                     <div class="links">
-                        <a href="https://github.com/sudoSami/tic-tac-toe-react" target="_blank">GitHub</a>
-                        <a href="https://sudosami.github.io/tic-tac-toe-react/" target="_blank">Live Demo</a>
+                        <a href="https://github.com/sudoSami/store-api" target="_blank">GitHub</a>
                     </div>
                 </div>
-                <p>A classic Tic Tac Toe game built with React, featuring game state management, win detection, and a
-                    responsive UI.</p>
-                <p class="tech">React · CSS · JavaScript</p>
+                <p>RESTful API for a product store with dynamic sorting, filtering with comparison operators, regex
+                    search, field selection, and pagination.</p>
+                <p class="tech">Node.js · Express.js · MongoDB · Mongoose</p>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <h3>Task Manager API</h3>
+                    <div class="links">
+                        <a href="https://github.com/sudoSami/task-manager" target="_blank">GitHub</a>
+                    </div>
+                </div>
+                <p>RESTful CRUD API for managing tasks with MongoDB persistence, async error handling middleware, and
+                    clean JSON responses.</p>
+                <p class="tech">Node.js · Express.js · MongoDB · Mongoose</p>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <h3>CineMate — Movie Discovery App</h3>
+                    <div class="links">
+                        <a href="https://github.com/sudoSami/CineMate" target="_blank">GitHub</a>
+                        <a href="https://sudosami.github.io/CineMate/" target="_blank">Live</a>
+                    </div>
+                </div>
+                <p>Movie discovery web app for searching, browsing, and exploring films via external API integration.
+                </p>
+                <p class="tech">HTML · CSS · JavaScript · API Integration</p>
             </div>
 
             <div class="project">
@@ -303,34 +395,61 @@
                     <h3>Weather App</h3>
                     <div class="links">
                         <a href="https://github.com/sudoSami/weather-app" target="_blank">GitHub</a>
-                        <a href="https://sudosami.github.io/weather-app/" target="_blank">Live Demo</a>
+                        <a href="https://sudosami.github.io/weather-app/" target="_blank">Live</a>
                     </div>
                 </div>
-                <p>A weather application that displays real-time weather data for any city, with a visually appealing
-                    and intuitive layout.</p>
+                <p>Displays real-time weather data for any city with a responsive interface, powered by a weather API.
+                </p>
                 <p class="tech">HTML · CSS · JavaScript · Weather API</p>
             </div>
 
             <div class="project">
                 <div class="project-header">
-                    <h3>Real-Time Chat App</h3>
+                    <h3>Thumb Grabber — YouTube Thumbnail Downloader</h3>
                     <div class="links">
-                        <a href="https://github.com/sudoSami" target="_blank">GitHub</a>
+                        <a href="https://github.com/sudoSami/thumb-grabber" target="_blank">GitHub</a>
                     </div>
                 </div>
-                <p>A full-stack real-time chat application with live messaging, built with a Node.js/Express backend and
-                    React frontend.</p>
-                <p class="tech">React · Node.js · Express.js · Socket.io · MongoDB</p>
+                <p>Simple web tool to download YouTube video thumbnails. No backend, no auth, no tracking — pure
+                    frontend.</p>
+                <p class="tech">HTML · CSS · JavaScript</p>
             </div>
 
+        </div>
+
+        <!-- Experience -->
+        <div class="section">
+            <h2 class="section-title">Experience</h2>
+
+            <div class="exp-item">
+                <div class="exp-header">
+                    <h3>Freelance Graphic Designer</h3>
+                    <span class="date">2020 — 2021</span>
+                </div>
+                <ul>
+                    <li>Completed graphic design orders for clients on Upwork and Fiverr</li>
+                </ul>
+            </div>
         </div>
 
         <!-- Education -->
         <div class="section">
             <h2 class="section-title">Education</h2>
-            <div class="education-item">
-                <h3>Self-Taught Web Developer</h3>
-                <p>Continuous learning through online resources, documentation, and hands-on project building.</p>
+            <div class="edu-item">
+                <div class="edu-header">
+                    <h3>Computer Science (Coursework)</h3>
+                    <span class="date">2020 — 2022</span>
+                </div>
+                <p>Completed 4 semesters. Studied programming fundamentals, data structures, and algorithms. Built
+                    projects in C++.</p>
+            </div>
+            <div class="edu-item">
+                <div class="edu-header">
+                    <h3>Self-Taught Web Development</h3>
+                    <span class="date">Aug 2024 — Present</span>
+                </div>
+                <p>Continuous learning through documentation, online resources, and building 25+ projects covering
+                    frontend, backend, and full-stack development.</p>
             </div>
         </div>
 
