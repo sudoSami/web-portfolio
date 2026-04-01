@@ -393,6 +393,29 @@ article .icon {
   cursor: default;
 }
 
+/* EDUCATION SECTION */
+
+#education {
+  position: relative;
+}
+
+#education .details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 2rem 1.5rem;
+}
+
+#education .experience-sub-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#education p {
+  font-size: 1rem;
+}
+
 /* PROJECTS SECTION */
 
 #projects {
